@@ -1,34 +1,41 @@
 export class ProductModel {
-  image: Image;
-  images: Images;
-  technicalDetail: TechnicalDetail;
-  detail: Detail;
-  color: Color;
-  warranty: Warranty;
-  feature: Feature;
+  id: number;
+  title: string;
+  description: string;
+  price: number;
+  images: Image[];
+  technical_details: TechnicalDetail[];
+  details: Detail[];
+  colors: Color[];
+  warranty: Warranty[];
+  features: Feature[];
   specs: Specs;
-  rootObject: RootObject;
 
   constructor(
-    image: Image,
-    images: Images,
-    technicalDetail: TechnicalDetail,
-    detail: Detail,
-    color: Color,
-    warranty: Warranty,
-    feature: Feature,
+    id: number,
+    title: string,
+    description: string,
+    price: number,
+    images: Image[],
+    technical_details: TechnicalDetail[],
+    details: Detail[],
+    colors: Color[],
+    warranty: Warranty[],
+    features: Feature[],
     specs: Specs,
-    rootObject: RootObject,
   ) {
-    this.image = image;
+    this.id = id;
+    this.title = title;
+    this.description = description;
+    this.price = price;
     this.images = images;
-    this.technicalDetail = technicalDetail;
-    this.detail = detail;
-    this.color = color;
+    this.images = images;
+    this.technical_details = technical_details;
+    this.details = details;
+    this.colors = colors;
     this.warranty = warranty;
-    this.feature = feature;
+    this.features = features;
     this.specs = specs;
-    this.rootObject = rootObject;
   }
 
 }
@@ -80,25 +87,6 @@ export class TechnicalDetail {
   ) {
     this.name = name;
     this.images = images;
-
-  }
-
-}
-
-export class Detail {
-  id: number;
-  name: string;
-  description: string;
-
-  constructor(
-    id: number,
-    name: string,
-    description: string,
-  ) {
-    this.id = id;
-    this.name = name;
-    this.description = description;
-
   }
 
 }
@@ -183,43 +171,20 @@ export class Specs {
 
 }
 
-export class RootObject {
+export class Detail {
   id: number;
-  title: string;
+  name: string;
   description: string;
-  price: number;
-  images: Image[];
-  technical_details: TechnicalDetail[];
-  details: Detail[];
-  colors: Color[];
-  warranty: Warranty[];
-  features: Feature[];
-  specs: Specs;
 
   constructor(
     id: number,
-    title: string,
+    name: string,
     description: string,
-    price: number,
-    images: Image[],
-    technical_details: TechnicalDetail[],
-    details: Detail[],
-    colors: Color[],
-    warranty: Warranty[],
-    features: Feature[],
-    specs: Specs,
   ) {
     this.id = id;
-    this.title = title;
+    this.name = name;
     this.description = description;
-    this.price = price;
-    this.images = images;
-    this.technical_details = technical_details;
-    this.details = details;
-    this.colors = colors;
-    this.warranty = warranty;
-    this.features = features;
-    this.specs = specs;
+
   }
 
 }

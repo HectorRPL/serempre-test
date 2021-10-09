@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-price-product-footer',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PriceProductFooterComponent implements OnInit {
 
-  constructor() { }
+  @Input() price: number | undefined;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-show-title-product',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./show-title-product.component.css']
 })
 export class ShowTitleProductComponent implements OnInit {
+
+  @Input() price: number | undefined;
+  @Input() description: string | undefined;
 
   constructor() { }
 

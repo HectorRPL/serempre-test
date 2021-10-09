@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Image } from '../../models/product/product-model';
 
 @Component({
   selector: 'app-show-product-images',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./show-product-images.component.css']
 })
 export class ShowProductImagesComponent implements OnInit {
+
+  @Input() images: Image[] | undefined;
 
   constructor() { }
 

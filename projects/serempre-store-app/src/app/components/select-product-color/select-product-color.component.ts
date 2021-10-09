@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Color } from '../../models/product/product-model';
 
 @Component({
   selector: 'app-select-product-color',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./select-product-color.component.css']
 })
 export class SelectProductColorComponent implements OnInit {
+
+  @Input() colors: Color[] | undefined;
 
   constructor() { }
 

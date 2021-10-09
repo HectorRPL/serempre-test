@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../../../services/product/product.service';
+import { ProductModel } from '../../../models/product/product-model';
 
 @Component({
   selector: 'app-view-product-detail',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewProductDetailComponent implements OnInit {
 
-  constructor() { }
+  public product: ProductModel | undefined;
+
+  constructor(
+    private productService: ProductService,
+  ) {
+  }
 
   ngOnInit(): void {
+    this.getProductById('1');
+  }
+
+  getProductById(id: string): void {
+    this.productService.getProductById(id).pipe().subscribe(
+      product => this.product = product,
+      error => console.log('Some error occur...'),
+    );
   }
 
 }

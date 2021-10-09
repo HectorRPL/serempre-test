@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Feature } from '../../models/product/product-model';
 
 @Component({
   selector: 'app-select-product-features',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./select-product-features.component.css']
 })
 export class SelectProductFeaturesComponent implements OnInit {
+
+  @Input() features: Feature[] | undefined;
 
   constructor() { }
 
