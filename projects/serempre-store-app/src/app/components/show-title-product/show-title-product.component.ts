@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ShowTitleProductComponent implements OnInit {
 
-  @Input() price: number | undefined;
+  @Input() title: string | undefined;
   @Input() description: string | undefined;
 
   constructor() { }

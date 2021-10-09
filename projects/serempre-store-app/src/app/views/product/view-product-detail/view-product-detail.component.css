@@ -1,3 +1,7 @@
+.sub-item {
+  padding-bottom: 30px;
+}
+
 .item-grid-container-1 { grid-area: column1; }
 .item-grid-container-2 { grid-area: column2; }
 

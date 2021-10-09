@@ -1,0 +1,25 @@
+.grid-container-color {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/*.item-container-color {
+  padding: 0;
+  margin: 50px 50px 20px 50px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}*/
+
+button {
+  cursor: pointer;
+  padding: 0;
+  margin: 10px;
+  border-color: #EEEFF2;
+  border-radius: 8px;
+  width: auto;
+  height: 100px;
+  background-color: transparent;
+}

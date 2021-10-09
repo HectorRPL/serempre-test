@@ -4,47 +4,65 @@
 
   <div class="item-grid-container-1">
 
-    <app-show-product-images
-      [images]="this.product.images">
-    </app-show-product-images>
+    <div class="sub-item">
+      <app-show-product-images
+        [images]="this.product.images">
+      </app-show-product-images>
+    </div>
 
-    <app-show-technical-details
-      [technicalDetails]="this.product.technical_details">
-    </app-show-technical-details>
-
+    <div class="sub-item">
+      <app-show-technical-details
+        [technicalDetails]="this.product.technical_details">
+      </app-show-technical-details>
+    </div>
   </div>
 
   <div class="item-grid-container-2">
 
-    <app-show-title-product
-      [title]="this.product.title"
-      [description]="this.product.description">
-    </app-show-title-product>
+    <div class="sub-item">
+      <app-show-title-product
+        [title]="this.product.title"
+        [description]="this.product.description">
+      </app-show-title-product>
+    </div>
 
-    <app-show-starting-product-price
-      [price]="this.product.price">
-    </app-show-starting-product-price>
+    <div class="sub-item">
+      <app-show-starting-product-price
+        [price]="this.product.price">
+      </app-show-starting-product-price>
+    </div>
 
-    <app-show-product-details
-      [details]="this.product.details">
-    </app-show-product-details>
+    <div class="sub-item">
+      <app-show-product-details
+        [details]="this.product.details">
+      </app-show-product-details>
+    </div>
 
-    <app-select-product-color
-      [colors]="this.product.colors">
-    </app-select-product-color>
+    <div class="sub-item">
+      <app-select-product-color
+        [colors]="this.product.colors">
+      </app-select-product-color>
+    </div>
 
-    <app-select-product-warranty
-      [warranty]="this.product.warranty">
-    </app-select-product-warranty>
 
-    <app-select-product-features
-      [features]="this.product.features">
-    </app-select-product-features>
+    <div class="sub-item">
+      <app-select-product-warranty
+        [warranty]="this.product.warranty">
+      </app-select-product-warranty>
+    </div>
 
-    <app-show-product-specifications
-      [specifications]="this.product.specs">
-    </app-show-product-specifications>
+    <div class="sub-item">
+      <app-select-product-features
+        [features]="this.product.features">
+      </app-select-product-features>
+    </div>
 
+
+    <div class="sub-item">
+      <app-show-product-specifications
+        [specifications]="this.product.specs">
+      </app-show-product-specifications>
+    </div>
   </div>
 
   <div>

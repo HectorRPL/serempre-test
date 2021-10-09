@@ -1,2 +1,14 @@
-<div>Choose your finish</div>
-<pre>{{colors|json}}</pre>
+<div class="subtitle">Choose your finish</div>
+<div class="grid-container-color">
+  <div
+
+    *ngFor="let color of this.colors">
+    <button
+      class="item-container-color">
+      <span class="subtitle">{{color.name}}</span>
+      <br>
+      <span class="text">{{color.description}}</span>
+    </button>
+  </div>
+</div>
+
