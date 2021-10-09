@@ -1,2 +1,24 @@
-/// images
-<pre>{{this.images|json}}</pre>
+<!--/// images-->
+<!--<pre>{{this.images|json}}</pre>-->
+<div class="img-preview-container">
+  <img
+    class="image-preview"
+    [src]="this.preview"
+    alt=""
+    [width]="'300'"
+  >
+</div>
+
+<div class="container" *ngFor="let image of this.images">
+  <button
+    class="item-container"
+    (click)="this.showPreview(image.x1);"
+  >
+    <img
+      [src]="image.x1"
+      alt=""
+      [width]="'10'"
+    >
+  </button>
+
+</div>

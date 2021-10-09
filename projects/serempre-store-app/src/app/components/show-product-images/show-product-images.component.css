@@ -1,0 +1,29 @@
+.container {
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  margin: 10px;
+  border-color: #EEEFF2;
+  border-radius: 8px;
+  width: 187px;
+  height: 100px;
+  background-color: transparent;
+}
+
+.img-preview-container {
+  margin: 10px;
+  border-style: solid;
+  border-color: #EEEFF2;
+  border-radius: 8px;
+  width: 592px;
+  height: 336px;
+  text-align: center;
+}
+
+.image-preview {
+  display: inline;
+}

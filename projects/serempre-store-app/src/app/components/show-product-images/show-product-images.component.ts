@@ -9,10 +9,15 @@ import { Image } from '../../models/product/product-model';
 export class ShowProductImagesComponent implements OnInit {
 
   @Input() images: Image[] | undefined;
+  styles: any;
+  preview: string |undefined;
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  showPreview(url: string) {
+    this.preview = url;
   }
 
 }
