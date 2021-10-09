@@ -1,45 +1,58 @@
-<div *ngIf="this.product">
-<!--  <app-show-title-product
-    [title]="this.product.title"
-    [description]="this.product.description">
-  </app-show-title-product>
+<div
+  class="grid-container"
+  *ngIf="this.product">
 
-  <app-select-product-color
-    [colors]="this.product.colors">
-  </app-select-product-color>
+  <div class="item-grid-container-1">
 
-  <app-select-product-features
-    [features]="this.product.features">
-  </app-select-product-features>
+    <app-show-product-images
+      [images]="this.product.images">
+    </app-show-product-images>
 
-  <app-select-product-warranty
-    [warranty]="this.product.warranty">
-  </app-select-product-warranty>
+    <app-show-technical-details
+      [technicalDetails]="this.product.technical_details">
+    </app-show-technical-details>
 
-  <app-show-product-details
-    [details]="this.product.details">
-  </app-show-product-details>-->
+  </div>
 
-  <app-show-product-images
-    [images]="this.product.images">
-  </app-show-product-images>
+  <div class="item-grid-container-2">
 
-<!--  <app-show-starting-product-price
-    [price]="this.product.price">
-  </app-show-starting-product-price>
+    <app-show-title-product
+      [title]="this.product.title"
+      [description]="this.product.description">
+    </app-show-title-product>
 
-  <app-show-technical-details
-    [technicalDetails]="this.product.technical_details">
-  </app-show-technical-details>
+    <app-show-starting-product-price
+      [price]="this.product.price">
+    </app-show-starting-product-price>
 
-  <app-price-product-footer
-    [price]="this.product.price"
-  >
-  </app-price-product-footer>
+    <app-show-product-details
+      [details]="this.product.details">
+    </app-show-product-details>
 
-  <app-show-product-specifications
-    [specifications]="this.product.specs">
-  </app-show-product-specifications>-->
+    <app-select-product-color
+      [colors]="this.product.colors">
+    </app-select-product-color>
+
+    <app-select-product-warranty
+      [warranty]="this.product.warranty">
+    </app-select-product-warranty>
+
+    <app-select-product-features
+      [features]="this.product.features">
+    </app-select-product-features>
+
+    <app-show-product-specifications
+      [specifications]="this.product.specs">
+    </app-show-product-specifications>
+
+  </div>
+
+  <div>
+    <app-price-product-footer
+      [price]="this.product.price">
+    </app-price-product-footer>
+  </div>
+
 </div>
 
 <!--
