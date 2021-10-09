@@ -9,10 +9,15 @@ import { Detail, Warranty } from '../../models/product/product-model';
 export class ShowProductDetailsComponent implements OnInit {
 
   @Input() details: Detail[] | undefined;
+  contentDescription: string | undefined;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  showContent(description: string): void {
+    this.contentDescription = description;
+  };
 
 }

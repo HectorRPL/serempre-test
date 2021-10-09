@@ -1,2 +1,17 @@
-/// tabs
-<pre>{{this.details|json}}</pre>
+<div
+  class="container-details"
+  *ngFor="let detail of this.details"
+>
+  <button
+    class="container-item"
+    (click)="this.showContent(detail.description);">
+    <span class="subtitle">
+      {{detail.name}}
+    </span>
+  </button>
+</div>
+
+<div>{{this.contentDescription}}</div>
+
+
+<!--<pre>{{this.details|json}}</pre>-->
