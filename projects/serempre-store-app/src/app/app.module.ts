@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PriceFooterComponent } from './components/price-footer/price-footer.component';
 import { ShowProductDescriptionComponent } from './components/show-product-description/show-product-description.component';
 import { ShowProductImagesComponent } from './components/show-product-images/show-product-images.component';
 import { ShowTechnicalDetailsComponent } from './components/show-technical-details/show-technical-details.component';
@@ -18,7 +17,6 @@ import { ShowStartingProductPriceComponent } from './components/show-starting-pr
 @NgModule({
   declarations: [
     AppComponent,
-    PriceFooterComponent,
     ShowProductDescriptionComponent,
     ShowProductImagesComponent,
     ShowTechnicalDetailsComponent,
